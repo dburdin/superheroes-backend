@@ -1,22 +1,22 @@
 const express = require("express");
 const router = express.Router();
 
+const { validateBody } = require("../../middlewares");
+const { schemas } = require("../../models/superHero");
+
 const {
   getAll,
   // getById,
-  // add,
+  add,
   // removeById,
   // updateById,
 } = require("../../controllers/superHeroes");
-
-// const { validateBody } = require("../../middlewares");
-// const schemas = require("../../schemas/superHeroes");
 
 router.get("/", getAll);
 
 // router.get("/:contactId", getById);
 
-// router.post("/", validateBody(schemas.addSchema), add);
+router.post("/", validateBody(schemas.addSchema), add);
 
 // router.delete("/:contactId", removeById);
 
