@@ -1,4 +1,4 @@
-const SuperHero = require("../models/superHero");
+const { SuperHero } = require("../models/superHero");
 
 const { HttpError, ctrlWrapper } = require("../helpers");
 
@@ -16,10 +16,10 @@ const getAll = async (req, res) => {
 //   res.json(result);
 // };
 
-// const add = async (req, res) => {
-//   const result = await contacts.addContact(req.body);
-//   res.status(201).json(result);
-// };
+const add = async (req, res) => {
+  const result = await SuperHero.create(req.body);
+  res.status(201).json(result);
+};
 
 // const removeById = async (req, res) => {
 //   const { contactId } = req.params;
@@ -44,7 +44,7 @@ const getAll = async (req, res) => {
 module.exports = {
   getAll: ctrlWrapper(getAll),
   // getById: ctrlWrapper(getById),
-  // add: ctrlWrapper(add),
+  add: ctrlWrapper(add),
   // removeById: ctrlWrapper(removeById),
   // updateById: ctrlWrapper(updateById),
 };
