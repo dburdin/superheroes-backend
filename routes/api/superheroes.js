@@ -1,24 +1,25 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/", async (req, res, next) => {
-  res.json({ message: "template message" });
-});
+const {
+  getAll,
+  // getById,
+  // add,
+  // removeById,
+  // updateById,
+} = require("../../controllers/superHeroes");
 
-router.get("/:contactId", async (req, res, next) => {
-  res.json({ message: "template message" });
-});
+// const { validateBody } = require("../../middlewares");
+// const schemas = require("../../schemas/superHeroes");
 
-router.post("/", async (req, res, next) => {
-  res.json({ message: "template message" });
-});
+router.get("/", getAll);
 
-router.delete("/:contactId", async (req, res, next) => {
-  res.json({ message: "template message" });
-});
+// router.get("/:contactId", getById);
 
-router.put("/:contactId", async (req, res, next) => {
-  res.json({ message: "template message" });
-});
+// router.post("/", validateBody(schemas.addSchema), add);
+
+// router.delete("/:contactId", removeById);
+
+// router.put("/:contactId", validateBody(schemas.addSchema), updateById);
 
 module.exports = router;
