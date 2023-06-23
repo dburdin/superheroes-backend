@@ -12,7 +12,7 @@ const {
   updateById,
 } = require("../../controllers/superHeroes");
 
-router.get("/", isValidId, getAll);
+router.get("/", getAll);
 
 router.get("/:id", getById);
 
