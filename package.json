@@ -7,7 +7,6 @@
     "start:dev": "cross-env NODE_ENV=development nodemon ./server.js",
     "lint": "eslint **/*.js",
     "lint:fix": "eslint --fix **/*.js"
-  
   },
   "dependencies": {
     "cors": "2.8.5",
@@ -16,7 +15,8 @@
     "express": "4.17.1",
     "joi": "^17.9.2",
     "mongoose": "^7.3.1",
-    "morgan": "1.10.0"
+    "morgan": "1.10.0",
+    "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {
     "eslint": "7.19.0",

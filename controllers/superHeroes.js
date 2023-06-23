@@ -41,10 +41,17 @@ const updateById = async (req, res) => {
   res.json(result);
 };
 
+const uploadImg = async (req, res) => {
+  res.json({
+    url: `/uploads/${req.file.originalname}`,
+  });
+};
+
 module.exports = {
   getAll: ctrlWrapper(getAll),
   getById: ctrlWrapper(getById),
   add: ctrlWrapper(add),
   removeById: ctrlWrapper(removeById),
   updateById: ctrlWrapper(updateById),
+  uploadImg: ctrlWrapper(uploadImg),
 };
