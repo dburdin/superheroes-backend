@@ -3,17 +3,17 @@
 
 This is the backend server for the Superheroes application. It provides an API to manage superheroes' data.
 
-Features
+Features:
 |Fetch a list of superheroes
 | Get details of a specific superhero by ID
 | Add a new superhero
 | Update an existing superhero
 | Delete a superhero
 
-Technologies Used
--Node.js: JavaScript runtime environment
--Express.js: Web application framework for Node.js
--MongoDB: NoSQL database for storing superheroes data
+Technologies Used:
+| Node.js: JavaScript runtime environment
+| Express.js: Web application framework for Node.js
+| MongoDB: NoSQL database for storing superheroes data
 
 API Endpoints
 GET /superheroes
