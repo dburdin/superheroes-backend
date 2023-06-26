@@ -34,3 +34,6 @@ PUT /superheroes/:id
 
 DELETE /superheroes/:id
 -Deletes a superhero by ID.
+
+
+Deployed on: https://superheroes-backend-es7x.onrender.com/api/superheroes
