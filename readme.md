@@ -16,6 +16,7 @@ This is the backend server for the Superheroes application. It provides an API t
 | MongoDB: NoSQL database for storing superheroes data
 
 **API Endpoints:**
+
 **GET /superheroes**
 |Returns a list of all superheroes.
 |Optional query parameters:
