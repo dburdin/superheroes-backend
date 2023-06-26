@@ -4,11 +4,11 @@
 This is the backend server for the Superheroes application. It provides an API to manage superheroes' data.
 
 Features
--Fetch a list of superheroes
--Get details of a specific superhero by ID
--Add a new superhero
--Update an existing superhero
--Delete a superhero
+|Fetch a list of superheroes
+| Get details of a specific superhero by ID
+| Add a new superhero
+| Update an existing superhero
+| Delete a superhero
 
 Technologies Used
 -Node.js: JavaScript runtime environment
